@@ -1,61 +1,225 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="个人学术主页与项目作品集" />
-  <title data-i18n="pageTitle">你的名字 · 个人主页</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="回到首页">
-      <span class="brand-mark">YN</span>
-      <span><strong>你的名字</strong><small>PERSONAL HOMEPAGE</small></span>
-    </a>
-    <nav class="nav-links" aria-label="主导航">
-      <a href="#about" data-i18n="navAbout">关于</a><a href="#work" data-i18n="navWork">项目</a><a href="#notes" data-i18n="navNotes">动态</a><a href="#journey" data-i18n="navJourney">经历</a>
-    </nav>
-    <div class="header-tools"><div class="language-switch"><button type="button" class="language-button active" data-lang="zh">中文</button><span>/</span><button type="button" class="language-button" data-lang="en">EN</button></div>
-    <button class="theme-toggle" type="button" aria-label="切换颜色主题" aria-pressed="false"><span></span></button>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="个人学术主页与项目作品集" />
+    <title data-i18n="pageTitle">刘光悦 · 个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">GL</span>
+        <span>
+          <strong data-i18n="name">刘光悦</strong>
+          <small>PERSONAL HOMEPAGE</small>
+        </span>
+      </a>
 
-  <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">RESEARCHER · DESIGNER · BUILDER</p>
-        <h1>把好奇心，<em>做成</em><br />可以被使用的东西。</h1>
-        <p class="hero-intro">你好，我是你的名字，一名华中科技大学计算机学院大数据专业本科生。我喜欢把复杂的问题拆开，再用清晰、可靠的方式重新组合。</p>
-        <div class="hero-actions"><a class="button button-dark" href="#work">查看我的项目 <span>↘</span></a><a class="text-link" href="mailto:your-qq-or-gmail@example.com">联系我 <span>↗</span></a></div>
-        <div class="availability"><span class="status-dot"></span>目前开放合作与研究机会</div>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#about" data-i18n="navAbout">关于</a>
+        <a href="#work" data-i18n="navWork">项目</a>
+        <a href="#notes" data-i18n="navNotes">动态</a>
+        <a href="#journey" data-i18n="navJourney">经历</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="language-switch" aria-label="语言切换">
+          <button type="button" class="language-button active" data-lang="zh">中文</button>
+          <span>/</span>
+          <button type="button" class="language-button" data-lang="en">EN</button>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="切换颜色主题" aria-pressed="false">
+          <span></span>
+        </button>
       </div>
-      <div class="hero-art" aria-label="个人照片占位图"><div class="portrait"><div class="portrait-shape"></div><span>YOUR<br />PHOTO</span></div><div class="art-caption">武汉 · 中国<br /><small>EST. 2023</small></div></div>
-    </section>
+    </header>
 
-    <section id="about" class="section-shell split-section">
-      <div class="section-label">01 / ABOUT</div>
-      <div class="section-content"><h2>研究让我保持<br /><em>开放与具体。</em></h2><p>我是华中科技大学计算机学院大数据专业本科生，研究兴趣集中在多模态模型、智能体和机器学习系统。对我而言，好的研究不只是一篇论文，也应该能被复现、被解释，最终走进真实世界。</p><div class="interest-list"><span>多模态模型</span><span>AI Agent</span><span>人机交互</span><span>可解释人工智能</span></div></div>
-    </section>
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">RESEARCHER · DESIGNER · BUILDER</p>
+          <h1 data-i18n="heroTitle">把好奇心，<em>做成</em><br />可以被使用的东西。</h1>
+          <p class="hero-intro" data-i18n="heroIntro">
+            你好，我是刘光悦，一名华中科技大学计算机学院 24 级大数据专业本科生。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">
+              <span data-i18n="heroButton">查看我的项目</span>
+              <span>↘</span>
+            </a>
+            <a class="text-link" href="mailto:your-qq-or-gmail@example.com">
+              <span data-i18n="contactMe">联系我</span>
+              <span>↗</span>
+            </a>
+          </div>
+          <div class="availability">
+            <span class="status-dot"></span>
+            <span data-i18n="availability">希望与更多导师合作学习</span>
+          </div>
+        </div>
 
-    <section id="work" class="section-shell projects-section">
-      <div class="section-heading"><div><div class="section-label">02 / SELECTED WORK</div><h2>最近在做的事</h2></div><a class="text-link" href="https://github.com" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div>
-      <div class="project-grid">
-        <article class="project-card project-featured"><div class="project-visual visual-lilac"><span class="visual-label">01</span><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="visual-core">MML</div></div><div class="project-meta"><span>研究项目 · 2025</span><span>↗</span></div><h3>让多模态模型<br />学会解释自己</h3><p>一个用于评估视觉语言模型推理一致性的开源基准。</p></article>
-        <article class="project-card"><div class="project-visual visual-yellow"><span class="visual-label">02</span><div class="grid-shape"></div><div class="visual-word">AGENT<br />LAB</div></div><div class="project-meta"><span>实验室 · 2024</span><span>↗</span></div><h3>Agent Lab</h3><p>记录智能体实验、失败样本与可复用工具。</p></article>
-        <article class="project-card"><div class="project-visual visual-blue"><span class="visual-label">03</span><div class="blue-circles"></div><div class="visual-word">OPEN<br />NOTE</div></div><div class="project-meta"><span>写作 · 持续更新</span><span>↗</span></div><h3>开放笔记</h3><p>关于研究、设计和日常观察的短文与阅读记录。</p></article>
+        <div class="hero-art" aria-label="个人照片占位图">
+          <div class="portrait">
+            <div class="portrait-shape"></div>
+            <span>YOUR<br />PHOTO</span>
+          </div>
+          <div class="art-caption">
+            武汉 · 中国<br />
+            <small>EST. 2023</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell split-section">
+        <div class="section-label">01 / ABOUT</div>
+        <div class="section-content">
+          <h2 data-i18n="aboutTitle">研究让我保持<br /><em>开放与具体。</em></h2>
+          <p data-i18n="aboutText">
+            我是华中科技大学计算机学院 24 级大数据专业本科生，研究兴趣集中在 MLLM、Human-AI Interaction 等方向，仍在持续探索。
+          </p>
+          <div class="interest-list">
+            <span data-i18n="interest1">多模态大语言模型</span>
+            <span data-i18n="interest2">Human-AI Interaction</span>
+            <span data-i18n="interest3">AI Agent</span>
+            <span data-i18n="interest4">机器学习</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section-shell projects-section">
+        <div class="section-heading">
+          <div>
+            <div class="section-label">02 / SELECTED WORK</div>
+            <h2 data-i18n="workTitle">最近在做的事</h2>
+          </div>
+          <a class="text-link" href="https://github.com/8aozi" target="_blank" rel="noreferrer">
+            GitHub <span>↗</span>
+          </a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-visual visual-lilac">
+              <span class="visual-label">01</span>
+              <div class="orbit orbit-a"></div>
+              <div class="orbit orbit-b"></div>
+              <div class="visual-core">MML</div>
+            </div>
+            <div class="project-meta">
+              <span data-i18n="projectMeta1">研究项目 · 2025</span>
+              <span>↗</span>
+            </div>
+            <h3 data-i18n="projectTitle1">让多模态模型<br />学会解释自己</h3>
+            <p data-i18n="projectDesc1">探索多模态模型理解、生成与交互能力的研究项目。</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-yellow">
+              <span class="visual-label">02</span>
+              <div class="grid-shape"></div>
+              <div class="visual-word">AGENT<br />LAB</div>
+            </div>
+            <div class="project-meta">
+              <span data-i18n="projectMeta2">实验室 · 2025</span>
+              <span>↗</span>
+            </div>
+            <h3 data-i18n="projectTitle2">Agent Lab</h3>
+            <p data-i18n="projectDesc2">记录智能体实验、失败样本与可复用工具。</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-blue">
+              <span class="visual-label">03</span>
+              <div class="blue-circles"></div>
+              <div class="visual-word">OPEN<br />NOTE</div>
+            </div>
+            <div class="project-meta">
+              <span data-i18n="projectMeta3">写作 · 持续更新</span>
+              <span>↗</span>
+            </div>
+            <h3 data-i18n="projectTitle3">开放笔记</h3>
+            <p data-i18n="projectDesc3">关于研究、设计和日常观察的短文与阅读记录。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="notes" class="section-shell updates-section">
+        <div class="section-label">03 / NOTES & NEWS</div>
+        <div class="updates-layout">
+          <h2 data-i18n="notesTitle">保持移动，<br /><em>保持记录。</em></h2>
+          <div class="updates-list">
+            <a href="#">
+              <time>2024.09</time>
+              <span data-i18n="news1">进入华中科技大学计算机学院，开始本科阶段学习。</span>
+              <b>↗</b>
+            </a>
+            <a href="#">
+              <time>2025.09</time>
+              <span data-i18n="news2">加入 ONE Lab，开始参与多模态与智能体方向的研究。</span>
+              <b>↗</b>
+            </a>
+            <a href="#">
+              <time>2026.09</time>
+              <span data-i18n="news3">两篇与学长合作的论文正在参加 ICLR 2027 评审。</span>
+              <b>↗</b>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="section-shell journey-section">
+        <div class="section-label">04 / JOURNEY</div>
+        <div class="section-heading">
+          <h2 data-i18n="journeyTitle">走过的地方</h2>
+          <span class="muted" data-i18n="journeySub">教育 · 研究 · 合作</span>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <time>2024 — 至今</time>
+            <div>
+              <h3>华中科技大学</h3>
+              <p data-i18n="eduDesc">计算机学院 · 大数据专业 · 本科生</p>
+            </div>
+            <span data-i18n="wuhan">武汉，中国</span>
+          </div>
+          <div class="timeline-item">
+            <time>2025 — 2026</time>
+            <div>
+              <h3>ONE Lab</h3>
+              <p data-i18n="labDesc">实验室研究 · 多模态模型与智能体方向</p>
+            </div>
+            <span data-i18n="research">研究</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="section-shell contact-inner">
+          <div>
+            <div class="section-label">05 / SAY HELLO</div>
+            <h2 data-i18n="contactTitle">有想法，<em>就写信。</em></h2>
+          </div>
+          <a class="contact-email" href="mailto:your-qq-or-gmail@example.com">
+            your-qq-or-gmail@example.com <span>↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <span>© 2025 刘光悦</span>
+      <div>
+        <a href="https://github.com/8aozi" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://openreview.net" target="_blank" rel="noreferrer">OpenReview</a>
+        <a href="#top" data-i18n="backTop">回到顶部 ↑</a>
       </div>
-    </section>
+    </footer>
 
-    <section id="notes" class="section-shell updates-section"><div class="section-label">03 / NOTES & NEWS</div><div class="updates-layout"><h2>保持移动，<br /><em>保持记录。</em></h2><div class="updates-list"><a href="#"><time>2025.06</time><span>参加 UIST Asia 夏季学校，分享智能体交互原型。</span><b>↗</b></a><a href="#"><time>2025.04</time><span>开源第一个多模态评测工具包 MML-Bench。</span><b>↗</b></a><a href="#"><time>2024.12</time><span>开始写这份个人网站，也开始更认真地记录。</span><b>↗</b></a></div></div></section>
-
-    <section id="journey" class="section-shell journey-section"><div class="section-label">04 / JOURNEY</div><div class="section-heading"><h2>走过的地方</h2><span class="muted">教育 · 研究 · 合作</span></div><div class="timeline"><div class="timeline-item"><time>2024 — 现在</time><div><h3>华中科技大学</h3><p>计算机学院 · 大数据专业 · 本科生</p></div><span>武汉，中国</span></div><div class="timeline-item"><time>2025 — 2026</time><div><h3>ONE Lab</h3><p>实验室研究 · 多模态模型与智能体方向</p></div><span>研究</span></div><div class="timeline-item"><time>2024</time><div><h3>开源社区与独立项目</h3><p>维护工具、写作并和朋友一起做一些有趣的实验。</p></div><span>远程</span></div></div></section>
-
-    <section class="contact-section"><div class="section-shell contact-inner"><div><div class="section-label">05 / SAY HELLO</div><h2>有想法，<em>就写信。</em></h2></div><a class="contact-email" href="mailto:your-qq-or-gmail@example.com">hello@example.com <span>↗</span></a></div></section>
-  </main>
-  <footer class="site-footer section-shell"><span>© 2025 你的名字</span><div><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a><a href="#top">回到顶部 ↑</a></div></footer>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
