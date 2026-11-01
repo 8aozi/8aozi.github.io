@@ -1,0 +1,61 @@
+[
+  {
+    "key": "dive",
+    "title": "DIVE: Benchmarking Full-Duplex Interaction with Visual Engagement in Continuous Streams",
+    "authors": [
+      {
+        "name": "Yuhang Chen",
+        "equal": true
+      },
+      {
+        "name": "Guangyue Liu",
+        "equal": true
+      },
+      {
+        "name": "Shilong Liu"
+      }
+    ],
+    "arxiv": "2610.28405",
+    "summary_zh": "面向连续音视频流的全双工交互评测基准，覆盖主动介入、持续参与和交互协调三类场景，包含 6 项任务、525 个评估实例（源自 413 个基础场景）；分别评估回应质量、参与决策与响应时机。",
+    "summary_en": "A benchmark for full-duplex interaction in continuous audio-video streams, spanning proactive intervention, continuous engagement, and interaction coordination. It comprises 6 tasks and 525 evaluation instances from 413 base scenarios, assessing response quality, participation decisions, and response timing.",
+    "contributions_zh": [
+      "运行评测实验，按任务差异设计并迭代 judge-model 提示词，交付完整评测提示词。",
+      "提出一项任务的数据集改进建议；参与论文写作、科研绘图、校验与润色。"
+    ],
+    "contributions_en": [
+      "Ran evaluation experiments and developed task-specific judge-model prompts, delivering the complete evaluation prompt set.",
+      "Suggested a dataset refinement for one task; contributed to manuscript writing, research figures, and proofreading."
+    ],
+    "contribution_source": "用户更新的重点素材填写表，读取于2026-10-29"
+  },
+  {
+    "key": "mosaic",
+    "title": "MOSAIC: Multi-Policy Sampling and Collaborative Test-Time Adaptation for Vision-Language-Action Models",
+    "authors": [
+      {
+        "name": "Yuhang Chen",
+        "equal": true
+      },
+      {
+        "name": "Guangyue Liu",
+        "equal": true
+      },
+      {
+        "name": "Yinchen Tian"
+      },
+      {
+        "name": "Jialin Liu"
+      }
+    ],
+    "arxiv": null,
+    "summary_zh": "面向视觉–语言–动作模型（VLA）的协同测试时适应（TTA），结合跨策略动作蒸馏（CAD）与策略内轨迹巩固（WTC）。CAD 在 4 个机器人操作基准上将平均成功率从 57.56% 提升至 60.60%；WTC 将平均成功率从 56.00% 提升至 58.91%。",
+    "summary_en": "Collaborative test-time adaptation (TTA) for vision-language-action (VLA) models via Cross-Policy Action Distillation (CAD) and Within-Policy Trajectory Consolidation (WTC). Across 4 robotic manipulation benchmarks, CAD raises mean success rate from 57.56% to 60.60%; WTC raises mean success rate from 56.00% to 58.91%.",
+    "contributions_zh": [
+      "参与实验设计与执行，以及论文写作、科研绘图、校验和润色。"
+    ],
+    "contributions_en": [
+      "Contributed to experimental design and execution, manuscript writing, research figures, and proofreading."
+    ],
+    "contribution_source": "用户更新的重点素材填写表，读取于2026-10-29"
+  }
+]
