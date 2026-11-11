@@ -1,39 +1,5 @@
 [
   {
-    "key": "wanderbench",
-    "title": "WanderBench: Can World Models Explore Dynamic Worlds from Video?",
-    "authors": [
-      {
-        "name": "Jiheng Li",
-        "equal": true
-      },
-      {
-        "name": "Jiale Wang",
-        "equal": true
-      },
-      {
-        "name": "Yuhang Chen",
-        "equal": true,
-        "project_leader": true,
-        "url": "https://yuhangchen1.github.io/"
-      },
-      {
-        "name": "Zai Wang",
-        "equal": true
-      },
-      {
-        "name": "Guangyue Liu",
-        "url": "https://8aozi.github.io/"
-      }
-    ],
-    "arxiv": "2611.12557",
-    "venue": "CVPR 2027",
-    "status": "under_review",
-    "figure": "assets/publications/wanderbench-overview.png",
-    "summary_zh": "视频条件世界模型的动态世界探索基准，包含 745 段源视频、6 个评估维度及 24 项子指标，并评测 8 个模型。提出免训练框架 WanderLand，改善源视频动态保真度与重访一致性。",
-    "summary_en": "A benchmark for exploring dynamic worlds with video-conditioned world models, comprising 745 source videos, 6 evaluation dimensions, and 24 sub-metrics, with evaluations of 8 models. The training-free WanderLand framework improves source-dynamics fidelity and revisit consistency."
-  },
-  {
     "key": "dive",
     "title": "DIVE: Benchmarking Full-Duplex Interaction with Visual Engagement in Continuous Streams",
     "authors": [
@@ -97,5 +63,39 @@
       "Contributed to experimental design and execution, manuscript writing, research figures, and proofreading."
     ],
     "contribution_source": "用户更新的重点素材填写表，读取于2026-10-29"
+  },
+  {
+    "key": "wanderbench",
+    "title": "WanderBench: Can World Models Explore Dynamic Worlds from Video?",
+    "authors": [
+      {
+        "name": "Jiheng Li",
+        "equal": true
+      },
+      {
+        "name": "Jiale Wang",
+        "equal": true
+      },
+      {
+        "name": "Yuhang Chen",
+        "equal": true,
+        "project_leader": true,
+        "url": "https://yuhangchen1.github.io/"
+      },
+      {
+        "name": "Zai Wang",
+        "equal": true
+      },
+      {
+        "name": "Guangyue Liu",
+        "url": "https://8aozi.github.io/"
+      }
+    ],
+    "arxiv": "2611.12557",
+    "venue": "CVPR 2027",
+    "status": "under_review",
+    "figure": "assets/publications/wanderbench-overview.png",
+    "summary_zh": "视频条件世界模型的动态世界探索基准，包含 745 段源视频、6 个评估维度及 24 项子指标，并评测 8 个模型。提出免训练框架 WanderLand，改善源视频动态保真度与重访一致性。",
+    "summary_en": "A benchmark for exploring dynamic worlds with video-conditioned world models, comprising 745 source videos, 6 evaluation dimensions, and 24 sub-metrics, with evaluations of 8 models. The training-free WanderLand framework improves source-dynamics fidelity and revisit consistency."
   }
 ]
